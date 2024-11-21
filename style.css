@@ -1,85 +1,680 @@
 
-body{
-    background-color:black;
-    color:white;
-    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
-}
-.navigation{
-    border:solid black;
-    /* height:12vh; */
-    padding:12px;
-   
-}
-.navTop{
-    border:none;
-    height:100%;
-    margin:10px;
-    display:flex;
-    justify-content: space-between;
+@keyframes animateThis {
+    0%{
+        font-size:22px;
+        border-radius:50%;
+    }
+    20%{
+        font-size:42px;
+        color:blue;
+        margin:3em;
+        border-radius:20%;
+    }
+    40%{
+        font-size:0;
+        font-family:cursive;
+        border-radius:30%;
+    }
+    100%{
+        font-size:12px;
+        border-radius:50%;
+    }
 }
 
-#unique{
-    width:170px;
+
+/* -------------Keyframes */
+
+
+
+
+
+
+@media (max-width: 2050px) {
+  body {
+    background-color:black;
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  }
+
+.navigation{
+    border:none black;
+    /* height:12vh; */
+    padding:12px;
+    width: 100%;   
+}
+
+.icon{
+    border: none red;
+    width:250px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    
 }
 .diz{
     width:100%;
 }
-.navBottom{
-    border:none;
-    height:20px;
-    background-color:black;
-    display:flex;
-    justify-content: space-evenly;
-}
-.navTab{
-    display:block;
-    justify-items:space-betweens;
-    border:none;
-    background-color: black;
-    color:white;
-}
+
 .displayContainer{
-    border:solid purple;
+    border:none purple;
     margin:1em;
     display:flex;
-    justify-content: space-evenly;
-    height:56vh;
+    height:85vh;
+   background-image: url(https://images.pexels.com/photos/5256400/pexels-photo-5256400.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load);
+   background-attachment:initial;
 }
 .deadpool{
-    border:solid red;
-    width:45%;
+    border:none red;
+    color:burlywood;
+    width:100%;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 150px;
+    margin-left: 20px;
+    padding-top: 5%;
 }
-.wolverine{
-    border:solid yellow;
-    width:45%;
-}
-.productContainer{
-    border:double salmon;
-    height:85vh;
-    border-width:9px;
-    margin:2em;
-}
-.teslaContainer{
-    border:solid burlywood;
-    /* height:66vh; */
-}
-.displayImg{
-    border:solid navy;
-    width:90%;
-    height:auto;
-    margin:1em;
-}
-.teslaTitle{
-    text-align:center;
-}
-.infoContainer{
-    border:solid black;
-    height:300px;
-    display:flex;
-}
-.displayMe{
-    border:solid fuchsia;
-    margin:1em;
-    width:33%;
+.deadpool1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: smaller;
+    color:antiquewhite;
+    padding-top: 20%;
 
 }
+.deadpool2{
+    border: none red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:orange;
+    display: flex;
+    margin-left: 10px;
+    padding-top: 1%;
+}
+#symbol{
+    border:none red;
+    display:flex;
+    align-content:end;    
+    width:30px;
+    height: 35px;
+    margin-right: 5%;
+    transition: 0.05s;
+}
+#symbol:hover{
+    height:40px;
+    width:30px; 
+    font-family:cursive;
+    transform: rotate(45deg);
+    background-size: contain;
+}
+.wolverine{
+    border:double yellow;
+    width: 100%;
+    margin: 80px;
+}
+.nav-link{
+    border: none red;
+    color: orange;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+#nav-link{
+    border: none blue;
+    color: orange;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+.navbar-brand{
+    color: orange;
+}
+.navbar-toggler{
+    color:orange;
+}
+.navbar-nav{
+    border: none blue;
+    justify-content: space-evenly;
+    width:100%;
+}
+.d-block{
+    border: none rebeccapurple;
+    width:900px;
+    height: 71vh;
+}
+
+.table {
+    border: 2px solid red;
+    height: 500px;
+    border: none green;
+    background-color: gray;
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=800);
+    }
+   
+    .thead {
+        border: none red;
+        align-items: center;
+        display: flex;
+        margin-left: 51.5%;
+        width: 100px;
+        margin-top: 300px;
+    }
+    .tbody{
+        border: 2px solid black;
+        align-items: center;
+        display:block;
+        height: 350px;
+        width: 360px;
+        margin-left: 45%;
+    }
+    .submit {
+        border: none red;
+        color:orange;
+        display: block;
+    }
+    .tbody td {
+        background-color:gray;
+        color: antiquewhite;
+    }
+    .thead1 {
+        border: none red;
+        display: block;
+        align-content: center;
+        margin-left: 51.5%;
+    }
+    
+}
+
+/* ---------------------------------------{ScreenSize: Desktop} */
+
+@media (max-width: 1280px) {
+
+    body {
+      background-color:black; 
+      background-image: url(https://images.pexels.com/photos/11728512/pexels-photo-11728512.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load);
+    }
+ 
+.navigation{
+    border:none black;
+    /* height:12vh; */
+    padding:12px;
+    width: 100%;   
+}
+
+.icon{
+    border: none red;
+    width:250px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    
+}
+.diz{
+    width:100%;
+}
+
+.displayContainer{
+    border:none purple;
+    margin:1em;
+    display:flex;
+    height:85vh;
+   background-image: url(https://images.pexels.com/photos/5256400/pexels-photo-5256400.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load);
+   background-attachment:initial;
+}
+.deadpool{
+    border:none red;
+    color:burlywood;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 150px;
+    margin-left: 20px;
+    padding-top: 5%;
+}
+.deadpool1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: smaller;
+    color:antiquewhite;
+    padding-top: 20%;
+
+}
+.deadpool2{
+    border: none red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:orange;
+    display: flex;
+    margin-left: 10px;
+    padding-top: 1%;
+}
+#symbol{
+    border:none red;
+    display:flex;
+    align-content:end;    
+    width:30px;
+    height: 35px;
+    margin-right: 5%;
+    transition: 0.05s;
+}
+#symbol:hover{
+    height:40px;
+    width:30px; 
+    font-family:cursive;
+    transform: rotate(45deg);
+    background-size: contain;
+}
+.wolverine{
+    border:double yellow;
+    display: flex;
+    width: 100%;
+    margin: 80px;
+}
+.nav-link{
+    border: none red;
+    color: orange;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+#nav-link{
+    border: none blue;
+    color: orange;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+.navbar-brand{
+    color: orange;
+}
+.navbar-toggler{
+    color:orange;
+}
+.navbar-nav{
+    border: none blue;
+    justify-content: space-evenly;
+    width:100%;
+}
+.d-block{
+    border: none rebeccapurple;
+    display:inline;
+    width:900px;
+    height: 68vh;
+}
+
+.table {
+    border: 2px solid red;
+    height: 500px;
+    border: none green;
+    background-color: gray;
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=800);
+    }
+   
+    .thead {
+        border: none red;
+        align-items: center;
+        display: flex;
+        margin-left: 51.5%;
+        width: 100px;
+        margin-top: 300px;
+    }
+    .tbody{
+        border: 2px solid black;
+        align-items: center;
+        display:block;
+        height: 350px;
+        width: 360px;
+        margin-left: 45%;
+    }
+    .submit {
+        border: none red;
+        color:orange;
+        display: block;
+    }
+    .tbody td {
+        background-color:gray;
+        color: antiquewhite;
+    }
+    .thead1 {
+        border: none red;
+        display: block;
+        align-content: center;
+        margin-left: 51.5%;
+    }
+    
+}
+
+
+  /* ---------------------------------------{ScreenSize: Mid} */
+
+@media (max-width: 800px) {
+
+    body {
+      background-color:black;
+    }
+  
+  
+.navigation{
+    border:none black;
+    /* height:12vh; */
+    padding:12px;
+    width: 100%;   
+}
+
+.icon{
+    border: none red;
+    width:250px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    
+}
+.diz{
+    width:100%;
+}
+
+.displayContainer{
+    border:none purple;
+    margin:1em;
+    display:flex;
+    height:85vh;
+   background-image: url(https://images.pexels.com/photos/5256400/pexels-photo-5256400.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load);
+   background-attachment:initial;
+}
+.deadpool{
+    border:none red;
+    color:burlywood;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 150px;
+    margin-left: 20px;
+    padding-top: 5%;
+}
+.deadpool1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: smaller;
+    color:antiquewhite;
+    padding-top: 20%;
+
+}
+.deadpool2{
+    border: none red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:orange;
+    display: flex;
+    margin-left: 10px;
+    padding-top: 1%;
+}
+#symbol{
+    border:none red;
+    display:flex;
+    align-content:end;    
+    width:30px;
+    height: 35px;
+    margin-right: 5%;
+    transition: 0.05s;
+}
+#symbol:hover{
+    height:40px;
+    width:30px; 
+    font-family:cursive;
+    transform: rotate(45deg);
+    background-size: contain;
+}
+.wolverine{
+    border:double yellow;
+    display: flex;
+    width: 100%;
+    margin: 80px;
+}
+.nav-link{
+    border: none red;
+    color: orange;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+#nav-link{
+    border: none blue;
+    color: orange;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+.navbar-brand{
+    color: orange;
+}
+.navbar-toggler{
+    color:orange;
+}
+.navbar-nav{
+    border: none blue;
+    justify-content: space-evenly;
+    width:100%;
+}
+.d-block{
+    border: none rebeccapurple;
+    display:inline;
+    width:900px;
+    height: 68vh;
+}
+
+.table {
+    border: 2px solid red;
+    height: 500px;
+    border: none green;
+    background-color: gray;
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=800);
+    }
+   
+    .thead {
+        border: none red;
+        align-items: center;
+        display: flex;
+        margin-left: 51.5%;
+        width: 100px;
+        margin-top: 300px;
+    }
+    .tbody{
+        border: 2px solid black;
+        align-items: center;
+        display:block;
+        height: 350px;
+        width: 360px;
+        margin-left: 45%;
+    }
+    .submit {
+        border: none red;
+        color:orange;
+        display: block;
+    }
+    .tbody td {
+        background-color:gray;
+        color: antiquewhite;
+    }
+    .thead1 {
+        border: none red;
+        display: block;
+        align-content: center;
+        margin-left: 51.5%;
+    }
+    
+}
+
+/* ---------------------------------------{ScreenSize: Mid} */
+
+@media (max-width: 500px) {
+
+body {
+      background-color:black;
+}
+  
+ 
+.navigation{
+    border:none black;
+    /* height:12vh; */
+    padding:12px;
+    width: 100%;   
+}
+
+.icon{
+    border: none red;
+    width:250px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    
+}
+.diz{
+    width:100%;
+}
+
+.displayContainer{
+    border:none purple;
+    margin:1em;
+    display:flex;
+    height:85vh;
+   background-image: url(https://images.pexels.com/photos/5256400/pexels-photo-5256400.jpeg?auto=compress&cs=tinysrgb&w=800&lazy=load);
+   background-attachment:initial;
+}
+.deadpool{
+    border:none red;
+    color:burlywood;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 150px;
+    margin-left: 20px;
+    padding-top: 5%;
+}
+.deadpool1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: smaller;
+    color:antiquewhite;
+    padding-top: 20%;
+
+}
+.deadpool2{
+    border: none red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:orange;
+    display: flex;
+    margin-left: 10px;
+    padding-top: 1%;
+}
+#symbol{
+    border:none red;
+    display:flex;
+    align-content:end;    
+    width:30px;
+    height: 35px;
+    margin-right: 5%;
+    transition: 0.05s;
+}
+#symbol:hover{
+    height:40px;
+    width:30px; 
+    font-family:cursive;
+    transform: rotate(45deg);
+    background-size: contain;
+}
+.wolverine{
+    border:double yellow;
+    display: flex;
+    width: 100%;
+    margin: 80px;
+}
+.nav-link{
+    border: none red;
+    color: orange;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+#nav-link{
+    border: none blue;
+    color: orange;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+.navbar-brand{
+    color: orange;
+}
+.navbar-toggler{
+    color:orange;
+}
+.navbar-nav{
+    border: none blue;
+    justify-content: space-evenly;
+    width:100%;
+}
+.d-block{
+    border: none rebeccapurple;
+    display:inline;
+    width:900px;
+    height: 68vh;
+}
+
+.table {
+    border: 2px solid red;
+    height: 500px;
+    border: none green;
+    background-color: gray;
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=800);
+    }
+   
+    .thead {
+        border: none red;
+        align-items: center;
+        display: flex;
+        margin-left: 51.5%;
+        width: 100px;
+        margin-top: 300px;
+    }
+    .tbody{
+        border: 2px solid black;
+        align-items: center;
+        display:block;
+        height: 350px;
+        width: 360px;
+        margin-left: 45%;
+    }
+    .submit {
+        border: none red;
+        color:orange;
+        display: block;
+    }
+    .tbody td {
+        background-color:gray;
+        color: antiquewhite;
+    }
+    .thead1 {
+        border: none red;
+        display: block;
+        align-content: center;
+        margin-left: 51.5%;
+    }
+}
+    .model{
+      background-color: black;
+      overflow: auto;
+      padding-top: 50px;
+      width: 100%;
+      height: 100%;
+    }
+    .model1{
+        background-color:white;
+        margin: 5% auto 15% auto;
+        border: 1px solid green;
+        width: 50%;
+    }
+    .container{
+        padding: 40px;
+    }

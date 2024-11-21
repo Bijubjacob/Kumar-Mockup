@@ -1,0 +1,144 @@
+
+@keyframes animateThis {
+    0%{
+        font-size:22px;
+        border-radius:50%;
+    }
+    20%{
+        font-size:42px;
+        color:blue;
+        margin:3em;
+        border-radius:20%;
+    }
+    40%{
+        font-size:0;
+        font-family:cursive;
+        border-radius:30%;
+    }
+    100%{
+        font-size:12px;
+        border-radius:50%;
+    }
+}
+
+
+/* -------------Keyframes */
+
+
+
+
+
+
+@media (max-width: 2050px) {
+  body {
+    background-color:black;
+    background-image: url(https://images.pexels.com/photos/956999/milky-way-starry-sky-night-sky-star-956999.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2);
+  }
+ 
+.navigation{
+    border:none black;
+    /* height:12vh; */
+    padding:12px;
+    width: 100%;   
+}
+
+.icon{
+    border: none red;
+    width:250px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    
+}
+.diz{
+    width:100%;
+}
+.nav-link{
+    border: none red;
+    color: orange;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+#nav-link{
+    border: none blue;
+    color: orange;
+    align-items: center;
+    font-family:'Times New Roman', Times, serif;
+    font-size:large;
+}
+.navbar-brand{
+    color: orange;
+}
+.navbar-toggler{
+    color:orange;
+}
+.navbar-nav{
+    border: none blue;
+    justify-content: space-evenly;
+    width:100%;
+}
+.d-block{
+    border: none rebeccapurple;
+    width:900px;
+    height: 71vh;
+}
+.deadpool{
+    border:none red;
+    color:burlywood;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: start;
+    font-size: x-large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 150px;
+    margin-left: 20px;
+    padding-top: 5%;
+}
+.deadpool1{
+    font-family:'Courier New', Courier, monospace;
+    font-size: smaller;
+    color:antiquewhite;
+    padding-top: 20%;
+
+}
+.deadpool2{
+    border: none red;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color:orange;
+    display: flex;
+    margin-left: 10px;
+    padding-top: 1%;
+}
+#symbol{
+    border:none red;
+    display:flex;
+    align-content:end;    
+    width:30px;
+    height: 35px;
+    margin-right: 5%;
+    transition: 0.05s;
+}
+#symbol:hover{
+    height:40px;
+    width:30px; 
+    font-family:cursive;
+    transform: rotate(45deg);
+    background-size: contain;
+}
+
+.modal{
+    background-color: black;
+    overflow: auto;
+}
+.modal1{
+     background-color:white;
+    margin: 5% auto 15% auto;
+    border: 1px solid green;
+    width: 50%;
+}
+.container{
+     padding: 40px;
+}
+}
